@@ -338,7 +338,7 @@ void DialogBreakpoints::on_btnExport_clicked() {
 	Q_FOREACH (edb::address_t address, export_list) {
 		int base = 16;
 		QString string_address = "0x" + QString().number(address, base) + "\n";
-		file.write(string_address.toAscii());
+		file.write(string_address.toUtf8());
 	}
 
 	file.close();
