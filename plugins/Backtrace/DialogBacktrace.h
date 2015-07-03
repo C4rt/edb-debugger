@@ -19,11 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #ifndef DIALOGBACKTRACE_H
 #define DIALOGBACKTRACE_H
 
-#if QT_VERSION >= 0x050000
 #include <QtWidgets/QDialog>
-#else
-#include <QtGui/QDialog>
-#endif
 
 #include "CallStack.h"
 
